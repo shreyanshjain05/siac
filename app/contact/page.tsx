@@ -209,6 +209,7 @@ export default function ContactPage() {
       {/* FAQ Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto">
+        <div className="text-justify">
           <SectionTitle
             title="Frequently Asked Questions"
             subtitle="Find answers to common questions about SIAC"
@@ -250,6 +251,7 @@ export default function ContactPage() {
               </p>
             </div>
           </div>
+        </div>
         </div>
       </section>
 

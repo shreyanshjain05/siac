@@ -9,6 +9,7 @@ import Link from "next/link"
 export default function FacilitiesPage() {
   return (
     <div>
+    <div className="text-justify">
       <PageHeader
         title="Our Facilities"
         description="SIAC offers comprehensive facilities to support research, innovation, and commercialization in AI-integrated civil engineering."
@@ -224,6 +225,7 @@ export default function FacilitiesPage() {
           </div>
         </div>
       </section>
+    </div>
     </div>
   )
 }

@@ -56,6 +56,7 @@ export function Footer() {
 
           <div>
             <h3 className="text-rusty-red font-bold text-xl mb-4">Contact Us</h3>
+
             <address className="not-italic text-light-brown space-y-3">
               <p className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 flex-shrink-0 text-rusty-red" />
@@ -93,6 +94,9 @@ export function Footer() {
 
         <div className="border-t border-light-brown/30 mt-8 pt-8 text-center">
           <p className="text-light-brown">© 2025 SIAC. All rights reserved.</p>
+          <p className="text-light-brown">
+            Made with ❤️ by <a href="https://www.instagram.com/iie_srmrmp" className="italic hover:underline" target="_blank" rel="noopener noreferrer">IIE Center</a>
+          </p>
         </div>
       </div>
     </footer>

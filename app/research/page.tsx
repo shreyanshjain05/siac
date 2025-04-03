@@ -9,6 +9,7 @@ import Link from "next/link"
 export default function ResearchPage() {
   return (
     <div>
+    <div className="text-justify">
       <PageHeader
         title="Research@Focus"
         description="Exploring the intersection of AI and civil engineering to develop innovative solutions for sustainable infrastructure."
@@ -30,7 +31,8 @@ export default function ResearchPage() {
             </TabsList>
 
             <TabsContent value="ai-applications" className="mt-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* <div className="text-justify"> */}
                 <div>
                   <h3 className="text-rusty-red text-2xl font-semibold mb-4">AI Applications in Civil Engineering</h3>
                   <p className="text-light-brown text-lg mb-6 leading-relaxed">
@@ -76,10 +78,12 @@ export default function ResearchPage() {
                   />
                 </div>
               </div>
+            {/* </div> */}
             </TabsContent>
 
             <TabsContent value="sustainable" className="mt-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* <div className="text-justify"> */}
                 <div>
                   <h3 className="text-rusty-red text-2xl font-semibold mb-4">Sustainable & Smart Infrastructure</h3>
                   <p className="text-light-brown text-lg mb-6 leading-relaxed">
@@ -124,6 +128,7 @@ export default function ResearchPage() {
                     className="w-full h-auto"
                   />
                 </div>
+              {/* </div> */}
               </div>
             </TabsContent>
 
@@ -275,6 +280,7 @@ export default function ResearchPage() {
           </div>
         </div>
       </section>
+    </div>
     </div>
   )
 }

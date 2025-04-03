@@ -12,45 +12,62 @@ export default function AboutPage() {
         description="The Centre of Excellence in Civil Engineering with AI aims to integrate cutting-edge Artificial Intelligence solutions into civil engineering."
       />
 
-      {/* Vision Section */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto">
-          <div className="flex justify-center mb-16">
-            <div className="rounded-full bg-warm-beige w-64 h-64 md:w-80 md:h-80 flex items-center justify-center p-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
-              <div className="text-center">
-                <h3 className="text-rusty-red font-bold text-2xl mb-4">Our Vision</h3>
-                {/* <p className="text-light-brown text-lg leading-relaxed">
-                  To serve as a hub for innovation, research, and industry collaboration, transforming the landscape of
-                  civil engineering through AI and ensuring long-term sustainable development aligned with global SDG
-                  goals.
-                </p> */}
-              </div>
-            </div>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-light-brown leading-relaxed mb-6">
-              The Sustainable Infrastructure & AI Research Centre (SIAC) is dedicated to revolutionizing civil
-              engineering practices through the integration of artificial intelligence. Our interdisciplinary approach
-              brings together experts from civil engineering, computer science, and related fields to develop innovative
-              solutions for sustainable infrastructure development.
-            </p>
-            <p className="text-lg text-light-brown leading-relaxed mb-6">
-              Established in 2023, SIAC has quickly become a leading research center in the field, with partnerships
-              across academia, industry, and government. Our work is guided by a commitment to sustainability,
-              innovation, and excellence in research and education.
-            </p>
-            <p className="text-lg text-light-brown leading-relaxed">
-              Through our research, consultancy services, and educational programs, we aim to address the most pressing
-              challenges in civil engineering and infrastructure development, from climate resilience to resource
-              efficiency and smart city planning.
-            </p>
+{/* Vision Section */}
+<section className="py-16 px-4">
+  <div className="container mx-auto">
+    <div className="flex justify-center mb-16">
+      <div className="rounded-full w-64 h-64 md:w-80 md:h-80 relative overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+        {/* Background Image */}
+        <img 
+          src="placeholder-logo.png" 
+          alt="Vision background" 
+          className="absolute w-full h-full object-cover"
+        />
+        
+        {/* Overlay to ensure text readability */}
+        <div className="absolute inset-0 bg-warm-beige bg-opacity-60"></div>
+        
+        {/* Text Content */}
+        <div className="absolute inset-0 flex items-center justify-center p-8">
+          <div className="text-center">
+            <h3 className="text-rusty-red font-bold text-2xl mb-4">Our Vision</h3>
+            {/* <p className="text-light-brown text-lg leading-relaxed">
+              To serve as a hub for innovation, research, and industry collaboration, transforming the landscape of
+              civil engineering through AI and ensuring long-term sustainable development aligned with global SDG
+              goals.
+            </p> */}
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+    
+
+    <div className="text-justify">
+    <div className="max-w-4xl mx-auto">
+      <p className="text-lg text-light-brown leading-relaxed mb-6">
+        The Sustainable Infrastructure & AI Research Centre (SIAC) is dedicated to revolutionizing civil
+        engineering practices through the integration of artificial intelligence. Our interdisciplinary approach
+        brings together experts from civil engineering, computer science, and related fields to develop innovative
+        solutions for sustainable infrastructure development.
+      </p>
+      <p className="text-lg text-light-brown leading-relaxed mb-6">
+        Established in 2023, SIAC has quickly become a leading research center in the field, with partnerships
+        across academia, industry, and government. Our work is guided by a commitment to sustainability,
+        innovation, and excellence in research and education.
+      </p>
+      <p className="text-lg text-light-brown leading-relaxed">
+        Through our research, consultancy services, and educational programs, we aim to address the most pressing
+        challenges in civil engineering and infrastructure development, from climate resilience to resource
+        efficiency and smart city planning.
+      </p>
+    </div>
+    </div>
+  </div>
+</section>
 
       {/* Objectives Section */}
       <section className="py-16 px-4 bg-gray-50">
+        <div className="text-justify">
         <div className="container mx-auto">
           <SectionTitle
             title="Our Objectives"
@@ -91,11 +108,13 @@ export default function AboutPage() {
             />
           </div>
         </div>
+      </div>
       </section>
 
       {/* Team Section */}
       <section className="py-16 px-4">
         <div className="container mx-auto">
+        <div className="text-justify">
           <SectionTitle title="Our Team" subtitle="Meet the experts driving innovation at SIAC" align="center" />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -136,6 +155,7 @@ export default function AboutPage() {
               image="/placeholder.svg?height=300&width=300"
             />
           </div>
+        </div>
         </div>
       </section>
 

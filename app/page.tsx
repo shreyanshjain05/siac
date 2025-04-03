@@ -5,6 +5,7 @@ import { SectionTitle } from "@/components/section-title"
 import { ArrowRight, Cpu, Leaf, BarChart3, GraduationCap, ChevronRight } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
+
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -39,13 +40,14 @@ export default function Home() {
               </Button>
             </div>
           </div>
-
+          <div className="text-justify">
           <div className="mt-16 bg-warm-beige/90 p-6 rounded-lg max-w-3xl mx-auto backdrop-blur-sm">
             <p className="text-light-brown">
               The CoE aligns with UN SDGs: SDG 9 (Industry, Innovation, and Infrastructure), SDG 11 (Sustainable Cities
               and Communities), and SDG 13 (Climate Action), driving technological innovation, research, consultancy,
               and industry collaboration.
             </p>
+          </div>
           </div>
         </div>
       </section>
@@ -61,8 +63,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105">
-              <img src="/placeholder.svg?height=600&width=800" alt="SIAC Research Centre" className="w-full h-auto" />
+            <img src="/green-city.png?height=600&width=800" alt="SIAC Research Centre" className="w-full h-auto" />
             </div>
+            <div className="text-justify">
             <div className="space-y-6">
               <p className="text-lg text-light-brown leading-relaxed">
                 The Centre of Excellence (CoE) in Civil Engineering with AI aims to integrate cutting-edge Artificial
@@ -81,6 +84,7 @@ export default function Home() {
                   </Link>
                 </Button>
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -138,6 +142,7 @@ export default function Home() {
             align="center"
           />
 
+          <div className="text-justify">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ResearchCard
               title="AI Applications in Civil Engineering"
@@ -154,6 +159,7 @@ export default function Home() {
               description="Facilitating the journey from research to market-ready products through patenting, licensing, and industry collaboration."
               image="/placeholder.svg?height=300&width=400"
             />
+          </div>
           </div>
 
           <div className="text-center mt-12">
@@ -181,7 +187,7 @@ export default function Home() {
               variant="outline"
               className="border-rusty-red text-rusty-red hover:bg-rusty-red/10 px-8 py-6 text-lg"
             >
-              <Link href="/facilities">Explore Our Facilities</Link>
+              <Link href="/partnerships">Explore Partnerships</Link>
             </Button>
           </div>
         </div>
@@ -190,21 +196,11 @@ export default function Home() {
   )
 }
 
-function ImpactCircle({
-  icon,
-  title,
-  description,
-}: {
-  icon: React.ReactNode
-  title: string
-  description: string
-}) {
+function ImpactCircle({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
   return (
-    <div className="flex flex-col items-center text-center group">
-      <div className="w-32 h-32 rounded-full bg-gradient-to-br from-rusty-red to-reddish-brown flex items-center justify-center mb-4 shadow-lg transform transition-transform group-hover:scale-110">
-        {icon}
-      </div>
-      <h3 className="text-xl font-bold text-rusty-red mb-2">{title}</h3>
+    <div className="flex flex-col items-center text-center p-6">
+      <div className="bg-rusty-red rounded-full p-4 mb-4">{icon}</div>
+      <h3 className="text-xl font-semibold text-rusty-red mb-2">{title}</h3>
       <p className="text-light-brown">{description}</p>
     </div>
   )

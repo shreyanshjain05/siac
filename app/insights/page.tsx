@@ -9,6 +9,7 @@ import Link from "next/link"
 export default function InsightsPage() {
   return (
     <div>
+    <div className="text-justify">
       <PageHeader
         title="Insights"
         description="Explore our latest publications, articles, and reports on AI in civil engineering and sustainable infrastructure."
@@ -211,6 +212,7 @@ export default function InsightsPage() {
           </div>
         </div>
       </section>
+    </div>
     </div>
   )
 }
