@@ -19,11 +19,11 @@ export default function AboutPage() {
             <div className="rounded-full bg-warm-beige w-64 h-64 md:w-80 md:h-80 flex items-center justify-center p-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
               <div className="text-center">
                 <h3 className="text-rusty-red font-bold text-2xl mb-4">Our Vision</h3>
-                <p className="text-light-brown text-lg leading-relaxed">
+                {/* <p className="text-light-brown text-lg leading-relaxed">
                   To serve as a hub for innovation, research, and industry collaboration, transforming the landscape of
                   civil engineering through AI and ensuring long-term sustainable development aligned with global SDG
                   goals.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

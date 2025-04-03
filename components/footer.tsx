@@ -7,7 +7,7 @@ const footerLinks = [
   { name: "Research", href: "/research" },
   { name: "Insights", href: "/insights" },
   { name: "Facilities", href: "/facilities" },
-  { name: "Impact", href: "/impact" },
+  // { name: "Impact", href: "/impact" },
   { name: "Contact", href: "/contact" },
 ]
 
