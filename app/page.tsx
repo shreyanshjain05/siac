@@ -15,7 +15,7 @@ export default function Home() {
           backgroundImage: "url('/placeholder.svg?height=1080&width=1920')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundBlend: "overlay",
+          backgroundBlendMode: "overlay",
         }}
       >
         <div className="container mx-auto px-4 py-20 text-center">
