@@ -80,8 +80,12 @@ export function Navbar() {
 
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-sandy-brown shadow-md p-4">
-            <div className="flex flex-col space-y-1">
+      <div
+        className={cn(
+          "fixed right-0 top-[50px] w-full h-auto max-h-[80vh] bg-white z-40 transform transition-transform duration-300 ease-in-out md:hidden shadow-lg rounded-bl-lg",
+          isOpen ? "translate-x-0" : "translate-x-full",
+        )}
+      >            <div className="flex flex-col space-y-1">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href
                 return (
