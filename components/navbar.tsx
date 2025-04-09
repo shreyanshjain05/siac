@@ -10,9 +10,9 @@ import { cn } from "@/lib/utils"
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
+  { name: "Services", href: "/facilities" },
   { name: "Research", href: "/research" },
   { name: "Insights", href: "/insights" },
-  { name: "Facilities", href: "/facilities" },
   // { name: "Impact", href: "/impact" },
   { name: "Contact", href: "/contact" },
 ]
@@ -38,11 +38,11 @@ export function Navbar() {
   }, [])
 
   return (
-    <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-sandy-brown shadow-md py-2" : "bg-sandy-brown/90 py-4"
-      }`}
-    >
+<nav
+  className={`w-full transition-all duration-300 mb-0 ${
+    isScrolled ? "bg-gray-900 shadow-md py-1" : "bg-gray-900/90 py-2"
+  }`}
+>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="/" className="text-white font-bold text-2xl flex items-center">
           <span className="bg-rusty-red text-white px-2 py-1 rounded mr-2">S</span>
@@ -58,7 +58,7 @@ export function Navbar() {
                 key={link.name}
                 href={link.href}
                 className={cn(
-                  "px-3 py-2 rounded-md text-reddish-brown hover:text-rusty-red font-medium transition-colors",
+                  "px-3 py-2 rounded-md text-white hover:text-rusty-red font-medium transition-colors",
                   isActive && "bg-rusty-red/10 text-rusty-red font-semibold",
                 )}
               >
@@ -93,7 +93,7 @@ export function Navbar() {
                     key={link.name}
                     href={link.href}
                     className={cn(
-                      "px-3 py-2 rounded-md text-reddish-brown hover:text-rusty-red font-medium transition-colors",
+                      "px-3 py-2 rounded-md text-white hover:text-rusty-red font-medium transition-colors",
                       isActive && "bg-rusty-red/10 text-rusty-red font-semibold",
                     )}
                     onClick={() => setIsOpen(false)}

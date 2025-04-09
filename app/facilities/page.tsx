@@ -11,7 +11,7 @@ export default function FacilitiesPage() {
     <div>
     <div className="text-justify">
       <PageHeader
-        title="Our Facilities"
+        title="Our Services"
         description="SIAC offers comprehensive facilities to support research, innovation, and commercialization in AI-integrated civil engineering."
       />
 
@@ -79,7 +79,7 @@ export default function FacilitiesPage() {
         </div>
       </section>
 
-      {/* Research Infrastructure Section */}
+      {/* Research Infrastructure Section
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto">
           <SectionTitle
@@ -134,9 +134,9 @@ export default function FacilitiesPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Success Stories Section */}
+      {/* Success Stories Section
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <SectionTitle title="Success Stories" subtitle="Real-world impact of our facilities and services" />
@@ -199,7 +199,7 @@ export default function FacilitiesPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Partner With Us Section */}
       <section className="py-16 px-4 bg-warm-beige">

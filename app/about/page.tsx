@@ -2,7 +2,7 @@ import React from "react"
 import { PageHeader } from "@/components/page-header"
 import { SectionTitle } from "@/components/section-title"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Microscope, Lightbulb, Handshake, Building2, GraduationCap, Award, ExternalLink } from 'lucide-react'
+import { Microscope, Lightbulb, Handshake, Building2, GraduationCap, Award, ExternalLink, Target, BarChart3, Globe2 } from 'lucide-react'
 
 export default function AboutPage() {
   return (
@@ -15,52 +15,81 @@ export default function AboutPage() {
         />
 
         {/* Vision Section */}
-        <section className="py-20 px-4">
+{/* Vision Section */}
+<section className="py-20 px-4">
           <div className="container mx-auto">
             <div className="flex flex-col items-center mb-16">
-              <div className="relative mb-12">
-                <div className="absolute -inset-1 bg-gradient-to-r from-amber-500 to-rusty-red rounded-full blur-md opacity-30"></div>
-                <div className="rounded-full w-64 h-64 md:w-80 md:h-80 relative overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300 border-4 border-white">
-                  {/* Background gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-warm-beige to-soft-gold opacity-80"></div>
-                  
-                  {/* Text Content */}
-                  <div className="absolute inset-0 flex items-center justify-center p-8">
-                    <div className="text-center">
-                      <h3 className="text-rusty-red font-bold text-3xl mb-4">Our Vision</h3>
-                      {/* <p className="text-light-brown text-lg leading-relaxed">
-                        To serve as a hub for innovation, research, and industry collaboration, transforming the landscape of
-                        civil engineering through AI and ensuring long-term sustainable development aligned with global SDG
-                        goals.
-                      </p> */}
+              {/* <SectionTitle
+                title="Our Vision"
+                subtitle="Transforming civil engineering through AI innovation"
+                align="center"
+              /> */}
+              
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12 w-full">
+                {/* Vision Circle */}
+                <div className="lg:col-span-1 flex justify-center">
+                  <div className="relative">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-amber-500 to-rusty-red rounded-full blur-md opacity-30"></div>
+                    <div className="rounded-full w-64 h-64 md:w-80 md:h-80 relative overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300 border-4 border-white">
+                      {/* Background gradient */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-warm-beige to-soft-gold opacity-80"></div>
+                      
+                      {/* Text Content */}
+                      <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
+                        <div className="text-center">
+                          <Target className="h-12 w-12 text-rusty-red mb-2" />
+                          <h3 className="text-rusty-red font-bold text-3xl mb-4">Our Vision</h3>
+                          <p className="text-light-brown text-lg leading-tight">
+                            To transform infrastructure development through AI innovation
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Vision Details */}
+                <div className="lg:col-span-2">
+                  <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md p-8 border border-warm-beige/20">
+                    <div className="text-justify">
+                      <p className="text-lg text-light-brown leading-relaxed mb-6">
+                        The Sustainable Infrastructure & AI Research Centre (SIAC) is dedicated to revolutionizing civil
+                        engineering practices through the integration of artificial intelligence. Our interdisciplinary approach
+                        brings together experts from civil engineering, computer science, and related fields to develop innovative
+                        solutions for sustainable infrastructure development.
+                      </p>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+                        <ObjectiveCard 
+                          icon={<BarChart3 className="h-8 w-8 text-amber-600" />}
+                          title="Innovation Hub"
+                          description="Serving as a catalyst for breakthrough research and development in AI-integrated civil engineering"
+                        />
+                        <ObjectiveCard 
+                          icon={<Handshake className="h-8 w-8 text-amber-600" />}
+                          title="Collaboration"
+                          description="Fostering partnerships across academia, industry, and government to translate research into practice"
+                        />
+                        <ObjectiveCard 
+                          icon={<Globe2 className="h-8 w-8 text-amber-600" />}
+                          title="Global Impact"
+                          description="Addressing critical infrastructure challenges aligned with sustainable development goals"
+                        />
+                      </div>
+                      
+                      <p className="text-lg text-light-brown leading-relaxed">
+                        Through our research, consultancy services, and educational programs, we aim to address the most pressing
+                        challenges in civil engineering and infrastructure development, from climate resilience to resource
+                        efficiency and smart city planning.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md p-8 border border-warm-beige/20">
-              <div className="text-justify">
-              <p className="text-lg text-light-brown leading-relaxed mb-6">
-                  The Sustainable Infrastructure & AI Research Centre (SIAC) is dedicated to revolutionizing civil
-                  engineering practices through the integration of artificial intelligence. Our interdisciplinary approach
-                  brings together experts from civil engineering, computer science, and related fields to develop innovative
-                  solutions for sustainable infrastructure development.
-                </p>
-                <p className="text-lg text-light-brown leading-relaxed mb-6">
-                  Established in 2023, SIAC has quickly become a leading research center in the field, with partnerships
-                  across academia, industry, and government. Our work is guided by a commitment to sustainability,
-                  innovation, and excellence in research and education.
-                </p>
-                <p className="text-lg text-light-brown leading-relaxed">
-                  Through our research, consultancy services, and educational programs, we aim to address the most pressing
-                  challenges in civil engineering and infrastructure development, from climate resilience to resource
-                  efficiency and smart city planning.
-                </p>
-              </div>
-            </div>
             </div>
           </div>
         </section>
+
 
         {/* Objectives Section */}
         <section className="py-20 px-4 bg-gradient-to-b from-gray-50 to-warm-beige/10">
@@ -102,6 +131,23 @@ export default function AboutPage() {
                 title="Excellence & Innovation"
                 description="Maintain the highest standards of excellence and innovation in all our research and activities."
               />
+            </div>
+          </div>
+        </section>
+
+                {/* Partners Section */}
+                <section className="py-20 px-4 bg-gradient-to-b from-warm-beige/20 to-warm-beige/5">
+          <div className="container mx-auto">
+            <SectionTitle
+              title="Our Partners"
+              subtitle="Collaborating with leading organizations to drive innovation"
+              align="center"
+            />
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
+                <PartnerLogo key={i} number={i} />
+              ))}
             </div>
           </div>
         </section>
@@ -152,22 +198,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Partners Section */}
-        <section className="py-20 px-4 bg-gradient-to-b from-warm-beige/20 to-warm-beige/5">
-          <div className="container mx-auto">
-            <SectionTitle
-              title="Our Partners"
-              subtitle="Collaborating with leading organizations to drive innovation"
-              align="center"
-            />
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
-                <PartnerLogo key={i} number={i} />
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Contact CTA Section */}
         <section className="py-16 px-4 bg-gradient-to-r from-rusty-red/90 to-amber-600/90 text-white">

@@ -19,12 +19,12 @@ export default function InsightsPage() {
         <div className="container mx-auto">
           <Tabs defaultValue="publications" className="w-full">
             <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 bg-warm-beige">
-              <TabsTrigger value="publications">Publications</TabsTrigger>
+              {/* <TabsTrigger value="publications">Publications</TabsTrigger> */}
               <TabsTrigger value="articles">Articles</TabsTrigger>
               <TabsTrigger value="reports">Reports</TabsTrigger>
             </TabsList>
 
-            <TabsContent value="publications" className="mt-8">
+            {/* <TabsContent value="publications" className="mt-8">
               <SectionTitle
                 title="Academic Publications"
                 subtitle="Our contributions to advancing knowledge in AI and civil engineering"
@@ -83,7 +83,7 @@ export default function InsightsPage() {
                   View All Publications
                 </Button>
               </div>
-            </TabsContent>
+            </TabsContent> */}
 
             <TabsContent value="articles" className="mt-8">
               <SectionTitle

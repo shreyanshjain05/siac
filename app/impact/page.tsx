@@ -18,25 +18,26 @@ export default function ImpactPage() {
           <SectionTitle title="Key Impact Areas" subtitle="How SIAC is making a difference" align="center" />
 
           <div className="flex flex-wrap justify-center gap-8 mt-12">
-            <ImpactCircle
-              icon={<Leaf className="h-12 w-12 text-white" />}
-              title="Sustainability"
-              description="Enhanced sustainability in infrastructure development through AI-optimized designs and resource efficiency."
-            />
-            <ImpactCircle
-              icon={<Cpu className="h-12 w-12 text-white" />}
-              title="Innovation"
-              description="Accelerating AI adoption in construction industry through cutting-edge research and technology transfer."
-            />
-            <ImpactCircle
-              icon={<GraduationCap className="h-12 w-12 text-white" />}
+          <ImpactCircle
+              icon={<GraduationCap className="h-10 w-10 text-white" />}
               title="Education"
-              description="Creating specialized jobs and training opportunities in AI-integrated civil engineering."
+              description="Creating specialized jobs in AI-integrated engineering"
             />
             <ImpactCircle
-              icon={<BarChart3 className="h-12 w-12 text-white" />}
+              icon={<Cpu className="h-10 w-10 text-white" />}
+              title="Innovation"
+              description="Accelerating AI adoption in construction"
+            />
+
+            <ImpactCircle
+              icon={<BarChart3 className="h-10 w-10 text-white" />}
               title="Resilience"
-              description="Improved infrastructure monitoring and maintenance leading to enhanced safety and longevity."
+              description="Improved infrastructure monitoring and maintenance"
+            />
+            <ImpactCircle
+              icon={<Leaf className="h-10 w-10 text-white" />}
+              title="Sustainability"
+              description="Enhanced sustainability in infrastructure development"
             />
           </div>
         </div>
